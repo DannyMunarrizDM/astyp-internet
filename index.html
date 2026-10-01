@@ -2,1680 +2,1849 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-    <meta
-        name="description"
-        content="NovaRed Soluciones - Desarrollo web, soporte técnico, redes y asesoría digital para empresas y negocios."
-    >
+  <meta
+    name="description"
+    content="Grupo Astyp - Internet por fibra óptica para hogares y negocios."
+  >
 
-    <title>NovaRed Soluciones | Tecnología para tu negocio</title>
+  <title>Grupo Astyp | Internet para tu hogar</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- FUENTE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
-    <link rel="stylesheet" href="styles.css">
+  <!-- LEAFLET -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  >
+
+  <!-- CSS -->
+  <link
+    rel="stylesheet"
+    href="styles.css"
+  >
 </head>
+
 
 <body>
 
 
-    <!-- =====================================================
-         HEADER
-    ====================================================== -->
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
 
-    <header class="header">
+  <header
+    class="header"
+    id="header"
+  >
 
-        <div class="container nav-container">
+    <div class="container header-content">
 
-            <a href="#inicio" class="logo">
-                Nova<span>Red</span>
+      <a
+        href="#inicio"
+        class="logo-link"
+      >
+
+        <img
+          src="images/logo.png"
+          alt="Grupo Astyp"
+          class="main-logo"
+        >
+
+      </a>
+
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        aria-label="Abrir menú"
+      >
+        ☰
+      </button>
+
+
+      <nav
+        class="nav"
+        id="nav"
+      >
+
+        <a href="#inicio">
+          Inicio
+        </a>
+
+        <a href="#planes">
+          Planes
+        </a>
+
+        <a href="#promociones">
+          Promociones
+        </a>
+
+        <a href="#cobertura">
+          Cobertura
+        </a>
+
+        <a href="#beneficios">
+          Beneficios
+        </a>
+
+        <a
+          href="#contacto"
+          class="nav-whatsapp"
+        >
+          Quiero Internet
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- =====================================================
+       MAIN
+  ====================================================== -->
+
+  <main>
+
+
+    <!-- =================================================
+         HERO
+    ================================================== -->
+
+    <section
+      class="hero"
+      id="inicio"
+    >
+
+      <div class="hero-blob hero-blob-one"></div>
+      <div class="hero-blob hero-blob-two"></div>
+      <div class="hero-blob hero-blob-three"></div>
+
+
+      <div class="container hero-layout">
+
+
+        <!-- TEXTO -->
+
+        <div class="hero-copy">
+
+
+          <div class="hero-label">
+
+            <span class="signal-dot"></span>
+
+            INTERNET PARA TU HOGAR
+
+          </div>
+
+
+          <h1>
+
+            Internet que llega
+
+            <span>
+              hasta donde tú estás.
+            </span>
+
+          </h1>
+
+
+          <p class="hero-description">
+
+            Conecta tu hogar con una red preparada para tus
+            películas, estudios, trabajo, videojuegos y todos
+            tus dispositivos.
+
+          </p>
+
+
+          <div class="hero-actions">
+
+            <a
+              href="#planes"
+              class="button button-orange"
+            >
+              Ver planes
+              <span>→</span>
             </a>
+
+
+            <a
+              href="#cobertura"
+              class="button button-outline"
+            >
+              Revisar cobertura
+            </a>
+
+          </div>
+
+
+
+          <div class="hero-highlights">
+
+
+            <div>
+
+              <span class="highlight-icon">
+                ⚡
+              </span>
+
+              <div>
+                <strong>
+                  Conexión estable
+                </strong>
+
+                <small>
+                  Para todos tus equipos
+                </small>
+              </div>
+
+            </div>
+
+
+            <div>
+
+              <span class="highlight-icon">
+                🛠️
+              </span>
+
+              <div>
+                <strong>
+                  Soporte cercano
+                </strong>
+
+                <small>
+                  Atención en tu zona
+                </small>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- VISUAL -->
+
+        <div class="hero-visual">
+
+
+          <div class="wifi-circle">
+
+            <span class="wifi-ring wifi-ring-one"></span>
+            <span class="wifi-ring wifi-ring-two"></span>
+            <span class="wifi-ring wifi-ring-three"></span>
+
+            <div class="wifi-core">
+              📶
+            </div>
+
+          </div>
+
+
+
+          <div class="connection-card">
+
+            <span class="connection-label">
+              TU HOGAR CONECTADO
+            </span>
+
+            <h3>
+              Internet para todos
+            </h3>
+
+
+            <div class="device-row">
+
+              <div>
+                📺
+                <span>TV</span>
+              </div>
+
+              <div>
+                💻
+                <span>Laptop</span>
+              </div>
+
+              <div>
+                📱
+                <span>Celular</span>
+              </div>
+
+              <div>
+                🎮
+                <span>Gaming</span>
+              </div>
+
+            </div>
+
+
+            <div class="connection-status">
+
+              <span></span>
+
+              Red activa y estable
+
+            </div>
+
+          </div>
+
+
+
+          <div class="floating-promo">
+
+            <small>
+              INTERNET SOLO
+            </small>
+
+            <strong>
+              S/ 50
+            </strong>
+
+            <span>
+              al mes
+            </span>
+
+          </div>
+
+
+
+          <div class="floating-support">
+
+            <span>
+              🧑‍🔧
+            </span>
+
+            <div>
+
+              <small>
+                Soporte
+              </small>
+
+              <strong>
+                Cerca de ti
+              </strong>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+      <!-- ONDA -->
+
+      <div class="hero-wave">
+
+        <svg
+          viewBox="0 0 1440 150"
+          preserveAspectRatio="none"
+        >
+
+          <path
+            d="M0,90 C260,170 440,20 720,80 C1000,140 1180,40 1440,100 L1440,150 L0,150 Z"
+            fill="#fffaf3"
+          ></path>
+
+        </svg>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         USOS
+    ================================================== -->
+
+    <section class="uses-section">
+
+      <div class="container">
+
+
+        <div class="mini-heading">
+
+          <span>
+            UNA RED PARA TODO
+          </span>
+
+          <h2>
+            ¿Para qué usas tu Internet?
+          </h2>
+
+        </div>
+
+
+
+        <div class="uses-grid">
+
+
+          <article class="use-card">
+
+            <div class="use-icon orange">
+              📺
+            </div>
+
+            <strong>
+              Streaming
+            </strong>
+
+            <span>
+              Películas y series
+            </span>
+
+          </article>
+
+
+
+          <article class="use-card">
+
+            <div class="use-icon teal">
+              🎮
+            </div>
+
+            <strong>
+              Gaming
+            </strong>
+
+            <span>
+              Juega y conéctate
+            </span>
+
+          </article>
+
+
+
+          <article class="use-card">
+
+            <div class="use-icon blue">
+              💻
+            </div>
+
+            <strong>
+              Trabajo
+            </strong>
+
+            <span>
+              Home office
+            </span>
+
+          </article>
+
+
+
+          <article class="use-card">
+
+            <div class="use-icon yellow">
+              🎓
+            </div>
+
+            <strong>
+              Estudios
+            </strong>
+
+            <span>
+              Clases online
+            </span>
+
+          </article>
+
+
+
+          <article class="use-card">
+
+            <div class="use-icon green">
+              📹
+            </div>
+
+            <strong>
+              Cámaras
+            </strong>
+
+            <span>
+              Seguridad conectada
+            </span>
+
+          </article>
+
+
+
+          <article class="use-card">
+
+            <div class="use-icon purple">
+              🏪
+            </div>
+
+            <strong>
+              Negocio
+            </strong>
+
+            <span>
+              Siempre conectado
+            </span>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         PLANES
+    ================================================== -->
+
+    <section
+      class="plans-section"
+      id="planes"
+    >
+
+      <div class="container">
+
+
+        <div class="section-heading">
+
+          <span class="eyebrow-orange">
+            PLANES ASTYP
+          </span>
+
+          <h2>
+            Elige cómo quieres conectarte
+          </h2>
+
+          <p>
+            Planes sencillos para tu hogar.
+          </p>
+
+        </div>
+
+
+
+        <div class="plans-layout">
+
+
+          <!-- PLAN INTERNET -->
+
+          <article class="plan plan-internet">
+
+
+            <div class="plan-top">
+
+              <span class="plan-type">
+                INTERNET SOLO
+              </span>
+
+              <span class="plan-symbol">
+                📡
+              </span>
+
+            </div>
+
+
+            <h3>
+              Internet Hogar
+            </h3>
+
+
+            <p class="plan-subtitle">
+              Conectividad para toda la familia.
+            </p>
+
+
+            <div class="plan-price">
+
+              <small>
+                Mensualidad
+              </small>
+
+              <div>
+
+                <sup>
+                  S/
+                </sup>
+
+                <strong>
+                  50
+                </strong>
+
+              </div>
+
+              <span>
+                al mes
+              </span>
+
+            </div>
+
+
+
+            <ul>
+
+              <li>
+                <span>✓</span>
+                Internet por fibra óptica
+              </li>
+
+              <li>
+                <span>✓</span>
+                Router Wi-Fi
+              </li>
+
+              <li>
+                <span>✓</span>
+                Soporte técnico
+              </li>
+
+              <li>
+                <span>✓</span>
+                Instalación según cobertura
+              </li>
+
+            </ul>
 
 
             <button
-                type="button"
-                class="menu-toggle"
-                id="menuToggle"
-                aria-label="Abrir menú"
-                aria-expanded="false"
+              class="plan-button"
+              data-plan="Internet Solo de S/ 50 mensuales"
             >
-                ☰
+              Quiero Internet
+            </button>
+
+          </article>
+
+
+
+          <!-- PLAN DUO -->
+
+          <article class="plan plan-duo">
+
+
+            <div class="best-plan">
+              RECOMENDADO
+            </div>
+
+
+            <div class="plan-top">
+
+              <span class="plan-type">
+                INTERNET + CABLE
+              </span>
+
+              <span class="plan-symbol">
+                📺
+              </span>
+
+            </div>
+
+
+            <h3>
+              Plan Dúo
+            </h3>
+
+
+            <p class="plan-subtitle">
+              Internet y entretenimiento en casa.
+            </p>
+
+
+            <div class="plan-price">
+
+              <small>
+                Mensualidad
+              </small>
+
+              <div>
+
+                <sup>
+                  S/
+                </sup>
+
+                <strong>
+                  80
+                </strong>
+
+              </div>
+
+              <span>
+                al mes
+              </span>
+
+            </div>
+
+
+
+            <ul>
+
+              <li>
+                <span>✓</span>
+                Internet por fibra
+              </li>
+
+              <li>
+                <span>✓</span>
+                Servicio de cable
+              </li>
+
+              <li>
+                <span>✓</span>
+                Router Wi-Fi
+              </li>
+
+              <li>
+                <span>✓</span>
+                Soporte técnico
+              </li>
+
+            </ul>
+
+
+            <button
+              class="plan-button"
+              data-plan="Internet más Cable de S/ 80 mensuales"
+            >
+              Quiero el Dúo
+            </button>
+
+          </article>
+
+
+
+          <!-- PLAN DUO PLUS -->
+
+          <article class="plan plan-plus">
+
+
+            <div class="plan-top">
+
+              <span class="plan-type">
+                DÚO PLUS
+              </span>
+
+              <span class="plan-symbol">
+                🚀
+              </span>
+
+            </div>
+
+
+            <h3>
+              Dúo Plus
+            </h3>
+
+
+            <p class="plan-subtitle">
+              Una alternativa superior para tu hogar.
+            </p>
+
+
+            <div class="plan-price">
+
+              <small>
+                Mensualidad
+              </small>
+
+              <div>
+
+                <sup>
+                  S/
+                </sup>
+
+                <strong>
+                  90
+                </strong>
+
+              </div>
+
+              <span>
+                al mes
+              </span>
+
+            </div>
+
+
+
+            <ul>
+
+              <li>
+                <span>✓</span>
+                Internet por fibra
+              </li>
+
+              <li>
+                <span>✓</span>
+                Servicio de cable
+              </li>
+
+              <li>
+                <span>✓</span>
+                Router Wi-Fi
+              </li>
+
+              <li>
+                <span>✓</span>
+                Atención técnica
+              </li>
+
+            </ul>
+
+
+            <button
+              class="plan-button"
+              data-plan="Dúo Plus de S/ 90 mensuales"
+            >
+              Quiero este plan
+            </button>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         PROMOCIONES
+    ================================================== -->
+
+    <section
+      class="promotions-section"
+      id="promociones"
+    >
+
+      <div class="promo-shape promo-shape-left"></div>
+      <div class="promo-shape promo-shape-right"></div>
+
+
+      <div class="container promo-layout">
+
+
+        <div class="promo-intro">
+
+          <span class="promo-small">
+            🔥 PROMOCIONES ASTYP
+          </span>
+
+          <h2>
+            Empieza pagando menos.
+          </h2>
+
+          <p>
+            Aprovecha precios promocionales durante tus
+            primeros meses de servicio.
+          </p>
+
+
+          <div class="promo-warning">
+
+            <span>
+              ℹ️
+            </span>
+
+            <p>
+              Promociones referenciales para esta propuesta.
+              Las condiciones finales deben confirmarse antes
+              de publicarlas.
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="promo-cards">
+
+
+          <article class="promo-card promo-orange">
+
+            <div class="months">
+              3 MESES
+            </div>
+
+            <span>
+              Internet Solo
+            </span>
+
+            <h3>
+              S/ 40
+            </h3>
+
+            <p>
+              al mes
+            </p>
+
+            <small>
+              Luego S/ 50 mensuales
+            </small>
+
+
+            <button
+              class="promo-button"
+              data-promo="Internet Solo a S/ 40 por 3 meses y luego S/ 50"
+            >
+              Aprovechar
+            </button>
+
+          </article>
+
+
+
+          <article class="promo-card promo-teal">
+
+            <div class="months">
+              3 MESES
+            </div>
+
+            <span>
+              Internet + Cable
+            </span>
+
+            <h3>
+              S/ 70
+            </h3>
+
+            <p>
+              al mes
+            </p>
+
+            <small>
+              Luego S/ 80 mensuales
+            </small>
+
+
+            <button
+              class="promo-button"
+              data-promo="Internet más Cable a S/ 70 por 3 meses y luego S/ 80"
+            >
+              Aprovechar
+            </button>
+
+          </article>
+
+
+
+          <article class="promo-card promo-yellow">
+
+            <div class="months">
+              3 MESES
+            </div>
+
+            <span>
+              Dúo Plus
+            </span>
+
+            <h3>
+              S/ 80
+            </h3>
+
+            <p>
+              al mes
+            </p>
+
+            <small>
+              Luego S/ 90 mensuales
+            </small>
+
+
+            <button
+              class="promo-button"
+              data-promo="Dúo Plus a S/ 80 por 3 meses y luego S/ 90"
+            >
+              Aprovechar
+            </button>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         COBERTURA
+    ================================================== -->
+
+    <section
+      class="coverage-section"
+      id="cobertura"
+    >
+
+      <div class="container">
+
+
+        <div class="coverage-header">
+
+          <div>
+
+            <span class="eyebrow-orange">
+              COBERTURA
+            </span>
+
+            <h2>
+              ¿Astyp llega a tu casa?
+            </h2>
+
+            <p>
+              Busca tu zona o utiliza tu ubicación para
+              revisar la cobertura.
+            </p>
+
+          </div>
+
+
+          <div class="coverage-legend">
+
+            <span>
+              <i class="available-dot"></i>
+              Disponible
+            </span>
+
+            <span>
+              <i class="expansion-dot"></i>
+              En expansión
+            </span>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="coverage-box">
+
+
+          <aside class="coverage-panel">
+
+
+            <h3>
+              Consulta tu zona
+            </h3>
+
+
+            <label for="zoneSelect">
+              Distrito o sector
+            </label>
+
+
+            <select id="zoneSelect">
+
+              <option value="">
+                Selecciona una zona
+              </option>
+
+              <option value="chincha-alta">
+                Chincha Alta
+              </option>
+
+              <option value="pueblo-nuevo">
+                Pueblo Nuevo
+              </option>
+
+              <option value="grocio-prado">
+                Grocio Prado
+              </option>
+
+              <option value="sunampe">
+                Sunampe
+              </option>
+
+            </select>
+
+
+
+            <button
+              id="checkCoverage"
+              class="coverage-search-button"
+            >
+              Ver cobertura
             </button>
 
 
-            <nav class="nav" id="navMenu">
 
-                <a href="#inicio">
-                    Inicio
-                </a>
+            <button
+              id="useLocation"
+              class="location-button"
+            >
+              📍 Usar mi ubicación
+            </button>
 
-                <a href="#nosotros">
-                    Nosotros
-                </a>
 
-                <a href="#servicios">
-                    Servicios
-                </a>
 
-                <a href="#proceso">
-                    Proceso
-                </a>
+            <div
+              class="coverage-result"
+              id="coverageResult"
+            >
 
-                <a
-                    href="#contacto"
-                    class="nav-button"
-                >
-                    Contáctanos
-                </a>
+              <span class="coverage-result-icon">
+                🗺️
+              </span>
 
-            </nav>
+              <div>
+
+                <strong>
+                  Selecciona tu zona
+                </strong>
+
+                <p>
+                  Te mostraremos el estado de cobertura.
+                </p>
+
+              </div>
+
+            </div>
+
+
+          </aside>
+
+
+
+          <div class="map-wrapper">
+
+            <div id="coverageMap"></div>
+
+            <div class="map-note">
+
+              <span>
+                🛰️
+              </span>
+
+              Mapa demostrativo. Las zonas finales pueden
+              reemplazarse por la cobertura real de Astyp.
+
+            </div>
+
+          </div>
+
 
         </div>
 
-    </header>
+      </div>
 
+    </section>
 
 
-    <!-- =====================================================
-         MAIN
-    ====================================================== -->
 
-    <main>
+    <!-- =================================================
+         BENEFICIOS
+    ================================================== -->
 
+    <section
+      class="benefits-section"
+      id="beneficios"
+    >
 
-        <!-- =================================================
-             HERO
-        ================================================== -->
+      <div class="container">
 
-        <section
-            class="hero"
-            id="inicio"
-        >
 
-            <div class="container hero-content">
+        <div class="benefits-header">
 
+          <span class="eyebrow-orange">
+            ¿POR QUÉ ASTYP?
+          </span>
 
-                <div class="hero-text">
+          <h2>
+            Internet cercano para tu día a día
+          </h2>
 
-                    <span class="hero-badge">
+        </div>
 
-                        <span class="badge-dot"></span>
 
-                        Soluciones digitales para negocios
 
-                    </span>
+        <div class="benefits-grid">
 
 
-                    <h1>
+          <article>
 
-                        Tecnología que impulsa
+            <span class="benefit-number">
+              01
+            </span>
 
-                        <span>
-                            el crecimiento
-                        </span>
-
-                        de tu negocio
-
-                    </h1>
-
-
-                    <p>
-
-                        Ayudamos a empresas, emprendedores y profesionales
-                        a construir una presencia digital moderna mediante
-                        páginas web, tecnología, conectividad y soluciones
-                        pensadas para sus objetivos.
-
-                    </p>
-
-
-                    <div class="hero-buttons">
-
-                        <a
-                            href="#contacto"
-                            class="btn btn-primary"
-                        >
-
-                            Solicitar información
-
-                            <svg
-                                viewBox="0 0 24 24"
-                                aria-hidden="true"
-                            >
-                                <path d="M5 12h14M13 6l6 6-6 6" />
-                            </svg>
-
-                        </a>
-
-
-                        <a
-                            href="#servicios"
-                            class="btn btn-secondary"
-                        >
-                            Ver servicios
-                        </a>
-
-                    </div>
-
-
-                    <div class="hero-features">
-
-                        <span>
-                            <span class="check-icon">✓</span>
-                            Atención personalizada
-                        </span>
-
-                        <span>
-                            <span class="check-icon">✓</span>
-                            Diseño responsive
-                        </span>
-
-                        <span>
-                            <span class="check-icon">✓</span>
-                            Soluciones escalables
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- =================================================
-                     MOCKUP HERO
-                ================================================== -->
-
-                <div class="hero-visual">
-
-                    <div class="visual-glow visual-glow-one"></div>
-
-                    <div class="visual-glow visual-glow-two"></div>
-
-
-                    <div class="browser-card">
-
-
-                        <div class="browser-header">
-
-                            <div class="browser-dots">
-
-                                <span></span>
-                                <span></span>
-                                <span></span>
-
-                            </div>
-
-
-                            <div class="browser-address">
-
-                                <svg viewBox="0 0 24 24">
-
-                                    <rect
-                                        x="5"
-                                        y="11"
-                                        width="14"
-                                        height="9"
-                                        rx="2"
-                                    />
-
-                                    <path d="M8 11V8a4 4 0 0 1 8 0v3" />
-
-                                </svg>
-
-                                novared.pe
-
-                            </div>
-
-
-                            <div class="browser-menu">
-                                •••
-                            </div>
-
-                        </div>
-
-
-
-                        <div class="dashboard">
-
-
-                            <div class="dashboard-sidebar">
-
-
-                                <div class="mini-logo">
-                                    N
-                                </div>
-
-
-                                <div class="sidebar-item active">
-
-                                    <svg viewBox="0 0 24 24">
-
-                                        <rect
-                                            x="3"
-                                            y="3"
-                                            width="7"
-                                            height="7"
-                                            rx="1"
-                                        />
-
-                                        <rect
-                                            x="14"
-                                            y="3"
-                                            width="7"
-                                            height="7"
-                                            rx="1"
-                                        />
-
-                                        <rect
-                                            x="3"
-                                            y="14"
-                                            width="7"
-                                            height="7"
-                                            rx="1"
-                                        />
-
-                                        <rect
-                                            x="14"
-                                            y="14"
-                                            width="7"
-                                            height="7"
-                                            rx="1"
-                                        />
-
-                                    </svg>
-
-                                </div>
-
-
-                                <div class="sidebar-item">
-
-                                    <svg viewBox="0 0 24 24">
-
-                                        <path d="M4 19V9" />
-                                        <path d="M10 19V5" />
-                                        <path d="M16 19v-7" />
-                                        <path d="M22 19H2" />
-
-                                    </svg>
-
-                                </div>
-
-
-                                <div class="sidebar-item">
-
-                                    <svg viewBox="0 0 24 24">
-
-                                        <circle
-                                            cx="12"
-                                            cy="8"
-                                            r="4"
-                                        />
-
-                                        <path d="M4 21a8 8 0 0 1 16 0" />
-
-                                    </svg>
-
-                                </div>
-
-                            </div>
-
-
-
-                            <div class="dashboard-main">
-
-
-                                <div class="dashboard-top">
-
-                                    <div>
-
-                                        <span class="dashboard-label">
-                                            PANEL GENERAL
-                                        </span>
-
-                                        <h3>
-                                            Tu negocio digital
-                                        </h3>
-
-                                    </div>
-
-
-                                    <div class="dashboard-avatar">
-                                        NR
-                                    </div>
-
-                                </div>
-
-
-
-                                <div class="dashboard-stats">
-
-
-                                    <div class="dashboard-stat">
-
-                                        <span>
-                                            Visitas
-                                        </span>
-
-                                        <strong>
-                                            2,847
-                                        </strong>
-
-                                        <small>
-                                            +18.2%
-                                        </small>
-
-                                    </div>
-
-
-                                    <div class="dashboard-stat">
-
-                                        <span>
-                                            Consultas
-                                        </span>
-
-                                        <strong>
-                                            186
-                                        </strong>
-
-                                        <small>
-                                            +12.4%
-                                        </small>
-
-                                    </div>
-
-
-                                    <div class="dashboard-stat">
-
-                                        <span>
-                                            Conversión
-                                        </span>
-
-                                        <strong>
-                                            6.5%
-                                        </strong>
-
-                                        <small>
-                                            +3.1%
-                                        </small>
-
-                                    </div>
-
-                                </div>
-
-
-
-                                <div class="chart-card">
-
-                                    <div class="chart-title">
-
-                                        <div>
-
-                                            <span>
-                                                Rendimiento
-                                            </span>
-
-                                            <strong>
-                                                Crecimiento mensual
-                                            </strong>
-
-                                        </div>
-
-
-                                        <span class="chart-period">
-                                            30 días
-                                        </span>
-
-                                    </div>
-
-
-                                    <div class="chart">
-
-                                        <div class="chart-line">
-
-                                            <svg
-                                                viewBox="0 0 500 150"
-                                                preserveAspectRatio="none"
-                                            >
-
-                                                <defs>
-
-                                                    <linearGradient
-                                                        id="chartGradient"
-                                                        x1="0"
-                                                        y1="0"
-                                                        x2="0"
-                                                        y2="1"
-                                                    >
-
-                                                        <stop
-                                                            offset="0%"
-                                                            stop-color="#2563eb"
-                                                            stop-opacity="0.28"
-                                                        />
-
-                                                        <stop
-                                                            offset="100%"
-                                                            stop-color="#2563eb"
-                                                            stop-opacity="0"
-                                                        />
-
-                                                    </linearGradient>
-
-                                                </defs>
-
-
-                                                <path
-                                                    class="chart-area"
-                                                    d="
-                                                        M0 125
-                                                        C50 105, 75 118, 110 95
-                                                        C150 65, 180 85, 220 62
-                                                        C260 42, 290 68, 330 40
-                                                        C365 20, 405 42, 445 20
-                                                        C470 8, 490 10, 500 5
-                                                        L500 150
-                                                        L0 150
-                                                        Z
-                                                    "
-                                                />
-
-
-                                                <path
-                                                    class="chart-path"
-                                                    d="
-                                                        M0 125
-                                                        C50 105, 75 118, 110 95
-                                                        C150 65, 180 85, 220 62
-                                                        C260 42, 290 68, 330 40
-                                                        C365 20, 405 42, 445 20
-                                                        C470 8, 490 10, 500 5
-                                                    "
-                                                />
-
-                                            </svg>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-
-
-                                <div class="dashboard-bottom">
-
-
-                                    <div>
-
-                                        <span class="dashboard-bottom-label">
-                                            Proyectos activos
-                                        </span>
-
-
-                                        <div class="project-avatars">
-
-                                            <span>A</span>
-                                            <span>M</span>
-                                            <span>R</span>
-                                            <span>+4</span>
-
-                                        </div>
-
-                                    </div>
-
-
-                                    <div class="project-status">
-
-                                        <span></span>
-
-                                        Todo funcionando
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="floating-card floating-card-one">
-
-                        <div class="floating-icon">
-
-                            <svg viewBox="0 0 24 24">
-                                <path d="M5 12l4 4L19 6" />
-                            </svg>
-
-                        </div>
-
-                        <div>
-
-                            <span>
-                                Proyecto
-                            </span>
-
-                            <strong>
-                                Publicado
-                            </strong>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="floating-card floating-card-two">
-
-                        <div class="floating-icon purple">
-
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 2v20" />
-                                <path d="M2 12h20" />
-                            </svg>
-
-                        </div>
-
-                        <div>
-
-                            <span>
-                                Nuevo cliente
-                            </span>
-
-                            <strong>
-                                +1 consulta
-                            </strong>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+            <div class="benefit-icon">
+              📡
             </div>
 
-        </section>
-
-
-
-        <!-- =================================================
-             SOBRE NOSOTROS
-        ================================================== -->
-
-        <section
-            class="section"
-            id="nosotros"
-        >
-
-            <div class="container about-grid">
-
-
-                <div class="section-content">
-
-                    <span class="section-label">
-                        Sobre nosotros
-                    </span>
-
-
-                    <h2>
-                        Tecnología pensada para hacer crecer tu negocio
-                    </h2>
-
-
-                    <p>
-
-                        En NovaRed Soluciones desarrollamos soluciones
-                        tecnológicas para negocios, empresas,
-                        emprendedores y profesionales.
-
-                    </p>
-
-
-                    <p>
-
-                        Nuestro enfoque combina diseño, tecnología y
-                        funcionalidad para crear herramientas digitales
-                        fáciles de utilizar y adaptadas a cada proyecto.
-
-                    </p>
-
-                </div>
-
-
-
-                <div class="stats-grid">
-
-
-                    <div class="stat-card">
-
-                        <div class="stat-icon">
-
-                            <svg viewBox="0 0 24 24">
-
-                                <rect
-                                    x="3"
-                                    y="4"
-                                    width="18"
-                                    height="14"
-                                    rx="2"
-                                />
-
-                                <path d="M8 22h8" />
-                                <path d="M12 18v4" />
-
-                            </svg>
-
-                        </div>
-
-
-                        <strong>
-                            100%
-                        </strong>
-
-                        <span>
-                            Diseño responsive
-                        </span>
-
-                    </div>
-
-
-
-                    <div class="stat-card">
-
-                        <div class="stat-icon">
-
-                            <svg viewBox="0 0 24 24">
-
-                                <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="9"
-                                />
-
-                                <path d="M12 7v5l3 2" />
-
-                            </svg>
-
-                        </div>
-
-
-                        <strong>
-                            Flexible
-                        </strong>
-
-                        <span>
-                            Atención personalizada
-                        </span>
-
-                    </div>
-
-
-
-                    <div class="stat-card">
-
-                        <div class="stat-icon">
-
-                            <svg viewBox="0 0 24 24">
-
-                                <path
-                                    d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"
-                                />
-
-                                <path d="M3.6 9h16.8" />
-                                <path d="M3.6 15h16.8" />
-                                <path d="M12 3a15 15 0 0 1 0 18" />
-                                <path d="M12 3a15 15 0 0 0 0 18" />
-
-                            </svg>
-
-                        </div>
-
-
-                        <strong>
-                            Online
-                        </strong>
-
-                        <span>
-                            Atención en todo Perú
-                        </span>
-
-                    </div>
-
-
-
-                    <div class="stat-card">
-
-                        <div class="stat-icon">
-
-                            <svg viewBox="0 0 24 24">
-                                <path d="M13 2 4 14h7l-1 8 9-12h-7z" />
-                            </svg>
-
-                        </div>
-
-
-                        <strong>
-                            Ágil
-                        </strong>
-
-                        <span>
-                            Implementación eficiente
-                        </span>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             SERVICIOS
-        ================================================== -->
-
-        <section
-            class="section services-section"
-            id="servicios"
-        >
-
-            <div class="container">
-
-
-                <div class="section-heading">
-
-                    <span class="section-label">
-                        Nuestros servicios
-                    </span>
-
-
-                    <h2>
-                        Soluciones digitales para cada etapa de tu negocio
-                    </h2>
-
-
-                    <p>
-
-                        Tecnología clara y funcional para mejorar
-                        la presencia y operación de empresas y profesionales.
-
-                    </p>
-
-                </div>
-
-
-
-                <div class="services-grid">
-
-
-                    <article class="service-card">
-
-                        <div class="service-card-icon">
-
-                            <svg viewBox="0 0 24 24">
-
-                                <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="9"
-                                />
-
-                                <path d="M3.6 9h16.8" />
-                                <path d="M3.6 15h16.8" />
-                                <path d="M12 3a15 15 0 0 1 0 18" />
-                                <path d="M12 3a15 15 0 0 0 0 18" />
-
-                            </svg>
-
-                        </div>
-
-
-                        <span class="service-number">
-                            01
-                        </span>
-
-
-                        <h3>
-                            Desarrollo Web
-                        </h3>
-
-
-                        <p>
-
-                            Creamos sitios profesionales, rápidos y
-                            adaptados a celulares, tablets y computadoras.
-
-                        </p>
-
-
-                        <ul>
-
-                            <li>
-                                Landing pages
-                            </li>
-
-                            <li>
-                                Sitios empresariales
-                            </li>
-
-                            <li>
-                                Catálogos digitales
-                            </li>
-
-                            <li>
-                                Integración con WhatsApp
-                            </li>
-
-                        </ul>
-
-                    </article>
-
-
-
-                    <article class="service-card">
-
-                        <div class="service-card-icon">
-
-                            <svg viewBox="0 0 24 24">
-
-                                <rect
-                                    x="3"
-                                    y="4"
-                                    width="18"
-                                    height="14"
-                                    rx="2"
-                                />
-
-                                <path d="M8 22h8" />
-                                <path d="M12 18v4" />
-
-                            </svg>
-
-                        </div>
-
-
-                        <span class="service-number">
-                            02
-                        </span>
-
-
-                        <h3>
-                            Soporte Técnico
-                        </h3>
-
-
-                        <p>
-
-                            Soluciones para mantener tus equipos
-                            y herramientas tecnológicas funcionando correctamente.
-
-                        </p>
-
-
-                        <ul>
-
-                            <li>
-                                Configuración
-                            </li>
-
-                            <li>
-                                Mantenimiento
-                            </li>
-
-                            <li>
-                                Asistencia remota
-                            </li>
-
-                            <li>
-                                Soporte para negocios
-                            </li>
-
-                        </ul>
-
-                    </article>
-
-
-
-                    <article class="service-card">
-
-                        <div class="service-card-icon">
-
-                            <svg viewBox="0 0 24 24">
-
-                                <path
-                                    d="M5 12.55a11 11 0 0 1 14.08 0"
-                                />
-
-                                <path
-                                    d="M8.53 16.11a6 6 0 0 1 6.95 0"
-                                />
-
-                                <path
-                                    d="M12 20h.01"
-                                />
-
-                            </svg>
-
-                        </div>
-
-
-                        <span class="service-number">
-                            03
-                        </span>
-
-
-                        <h3>
-                            Redes y Conectividad
-                        </h3>
-
-
-                        <p>
-
-                            Implementamos soluciones para mejorar
-                            la conectividad de hogares, oficinas y empresas.
-
-                        </p>
-
-
-                        <ul>
-
-                            <li>
-                                Configuración Wi-Fi
-                            </li>
-
-                            <li>
-                                Routers
-                            </li>
-
-                            <li>
-                                Puntos de red
-                            </li>
-
-                            <li>
-                                Optimización
-                            </li>
-
-                        </ul>
-
-                    </article>
-
-
-
-                    <article class="service-card">
-
-                        <div class="service-card-icon">
-
-                            <svg viewBox="0 0 24 24">
-
-                                <path d="M3 3v18h18" />
-                                <path d="m7 15 4-4 3 3 5-6" />
-
-                            </svg>
-
-                        </div>
-
-
-                        <span class="service-number">
-                            04
-                        </span>
-
-
-                        <h3>
-                            Asesoría Digital
-                        </h3>
-
-
-                        <p>
-
-                            Orientamos a negocios que desean aprovechar mejor
-                            las herramientas y oportunidades digitales.
-
-                        </p>
-
-
-                        <ul>
-
-                            <li>
-                                Presencia digital
-                            </li>
-
-                            <li>
-                                Optimización web
-                            </li>
-
-                            <li>
-                                Herramientas digitales
-                            </li>
-
-                            <li>
-                                Soluciones personalizadas
-                            </li>
-
-                        </ul>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             BENEFICIOS
-        ================================================== -->
-
-        <section class="section">
-
-            <div class="container">
-
-
-                <div class="section-heading">
-
-                    <span class="section-label">
-                        Nuestra forma de trabajar
-                    </span>
-
-
-                    <h2>
-                        Soluciones claras, modernas y enfocadas en resultados
-                    </h2>
-
-                </div>
-
-
-
-                <div class="benefits-grid">
-
-
-                    <div class="benefit">
-
-                        <span>
-                            01
-                        </span>
-
-                        <h3>
-                            Atención personalizada
-                        </h3>
-
-                        <p>
-                            Cada proyecto comienza entendiendo
-                            las necesidades reales del cliente.
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="benefit">
-
-                        <span>
-                            02
-                        </span>
-
-                        <h3>
-                            Diseño moderno
-                        </h3>
-
-                        <p>
-                            Interfaces limpias y adaptadas
-                            a todo tipo de dispositivos.
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="benefit">
-
-                        <span>
-                            03
-                        </span>
-
-                        <h3>
-                            Comunicación clara
-                        </h3>
-
-                        <p>
-                            Mantenemos una comunicación directa
-                            durante cada etapa del proyecto.
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="benefit">
-
-                        <span>
-                            04
-                        </span>
-
-                        <h3>
-                            Escalabilidad
-                        </h3>
-
-                        <p>
-                            Creamos soluciones que pueden crecer
-                            junto con las necesidades del negocio.
-                        </p>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             PROCESO
-        ================================================== -->
-
-        <section
-            class="section process-section"
-            id="proceso"
-        >
-
-            <div class="container">
-
-
-                <div class="section-heading">
-
-                    <span class="section-label">
-                        Nuestro proceso
-                    </span>
-
-
-                    <h2>
-                        De una idea a una solución funcional
-                    </h2>
-
-                </div>
-
-
-
-                <div class="process-grid">
-
-
-                    <div class="process-card">
-
-                        <span>
-                            01
-                        </span>
-
-                        <h3>
-                            Analizamos
-                        </h3>
-
-                        <p>
-                            Entendemos tu negocio, necesidades y objetivos.
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="process-card">
-
-                        <span>
-                            02
-                        </span>
-
-                        <h3>
-                            Planificamos
-                        </h3>
-
-                        <p>
-                            Definimos una solución adecuada para el proyecto.
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="process-card">
-
-                        <span>
-                            03
-                        </span>
-
-                        <h3>
-                            Desarrollamos
-                        </h3>
-
-                        <p>
-                            Construimos y revisamos cada parte de la solución.
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="process-card">
-
-                        <span>
-                            04
-                        </span>
-
-                        <h3>
-                            Publicamos
-                        </h3>
-
-                        <p>
-                            Entregamos el proyecto y brindamos soporte inicial.
-                        </p>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             EXPERIENCIA DEMO
-        ================================================== -->
-
-        <section class="section">
-
-            <div class="container">
-
-
-                <div class="section-heading">
-
-                    <span class="section-label">
-                        Experiencia digital
-                    </span>
-
-
-                    <h2>
-                        Una experiencia pensada para el usuario
-                    </h2>
-
-
-                    <p>
-
-                        Este proyecto es una demostración conceptual
-                        creada para mostrar diseño, estructura y
-                        desarrollo web responsive.
-
-                    </p>
-
-                </div>
-
-
-
-                <div class="testimonials-grid">
-
-
-                    <article class="testimonial-card">
-
-                        <div class="testimonial-icon">
-
-                            <svg viewBox="0 0 24 24">
-                                <path d="M5 12l4 4L19 6" />
-                            </svg>
-
-                        </div>
-
-
-                        <h3>
-                            Navegación sencilla
-                        </h3>
-
-
-                        <p>
-
-                            Una estructura clara permite encontrar
-                            información rápidamente desde cualquier dispositivo.
-
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="testimonial-card">
-
-                        <div class="testimonial-icon">
-
-                            <svg viewBox="0 0 24 24">
-
-                                <rect
-                                    x="3"
-                                    y="4"
-                                    width="18"
-                                    height="14"
-                                    rx="2"
-                                />
-
-                                <path d="M8 22h8" />
-                                <path d="M12 18v4" />
-
-                            </svg>
-
-                        </div>
-
-
-                        <h3>
-                            Diseño responsive
-                        </h3>
-
-
-                        <p>
-
-                            El contenido se adapta automáticamente
-                            a computadoras, tablets y teléfonos.
-
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="testimonial-card">
-
-                        <div class="testimonial-icon">
-
-                            <svg viewBox="0 0 24 24">
-                                <path d="M13 2 4 14h7l-1 8 9-12h-7z" />
-                            </svg>
-
-                        </div>
-
-
-                        <h3>
-                            Experiencia moderna
-                        </h3>
-
-
-                        <p>
-
-                            Interfaces limpias, rápidas y diseñadas
-                            para transmitir confianza profesional.
-
-                        </p>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             CONTACTO
-        ================================================== -->
-
-        <section
-            class="contact-section"
-            id="contacto"
-        >
-
-            <div class="container contact-grid">
-
-
-                <div class="contact-info">
-
-                    <span class="section-label light">
-                        Contacto
-                    </span>
-
-
-                    <h2>
-                        Conversemos sobre tu próximo proyecto
-                    </h2>
-
-
-                    <p>
-
-                        Cuéntanos qué necesita tu negocio y encontraremos
-                        una solución tecnológica adaptada a tus objetivos.
-
-                    </p>
-
-
-
-                    <div class="contact-items">
-
-
-                        <div>
-
-                            <strong>
-                                WhatsApp
-                            </strong>
-
-                            <span>
-                                +51 999 999 999
-                            </span>
-
-                        </div>
-
-
-
-                        <div>
-
-                            <strong>
-                                Correo
-                            </strong>
-
-                            <span>
-                                contacto@novared.pe
-                            </span>
-
-                        </div>
-
-
-
-                        <div>
-
-                            <strong>
-                                Atención
-                            </strong>
-
-                            <span>
-                                Todo el Perú
-                            </span>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-
-
-                <form
-                    class="contact-form"
-                    id="contactForm"
-                >
-
-
-                    <div class="form-header">
-
-                        <span>
-                            Hablemos
-                        </span>
-
-                        <h3>
-                            Solicita información
-                        </h3>
-
-                    </div>
-
-
-
-                    <div class="form-group">
-
-                        <label for="nombre">
-                            Nombre
-                        </label>
-
-                        <input
-                            type="text"
-                            id="nombre"
-                            name="nombre"
-                            placeholder="Tu nombre"
-                            required
-                        >
-
-                    </div>
-
-
-
-                    <div class="form-group">
-
-                        <label for="correo">
-                            Correo electrónico
-                        </label>
-
-                        <input
-                            type="email"
-                            id="correo"
-                            name="correo"
-                            placeholder="correo@ejemplo.com"
-                            required
-                        >
-
-                    </div>
-
-
-
-                    <div class="form-group">
-
-                        <label for="telefono">
-                            Teléfono
-                        </label>
-
-                        <input
-                            type="tel"
-                            id="telefono"
-                            name="telefono"
-                            placeholder="+51 999 999 999"
-                        >
-
-                    </div>
-
-
-
-                    <div class="form-group">
-
-                        <label for="mensaje">
-                            Cuéntanos sobre tu proyecto
-                        </label>
-
-                        <textarea
-                            id="mensaje"
-                            name="mensaje"
-                            rows="5"
-                            placeholder="¿En qué podemos ayudarte?"
-                            required
-                        ></textarea>
-
-                    </div>
-
-
-
-                    <button
-                        type="submit"
-                        class="btn btn-primary form-button"
-                    >
-
-                        Enviar consulta
-
-                        <svg viewBox="0 0 24 24">
-                            <path d="M5 12h14M13 6l6 6-6 6" />
-                        </svg>
-
-                    </button>
-
-
-                    <p
-                        class="form-message"
-                        id="formMessage"
-                    ></p>
-
-                </form>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-
-    <!-- =====================================================
-         FOOTER
-    ====================================================== -->
-
-    <footer class="footer">
-
-        <div class="container footer-content">
-
-            <a
-                href="#inicio"
-                class="logo footer-logo"
-            >
-                Nova<span>Red</span>
-            </a>
-
+            <h3>
+              Fibra óptica
+            </h3>
 
             <p>
-                Soluciones digitales para negocios y profesionales.
+              Infraestructura preparada para brindar
+              una conexión estable.
             </p>
 
+          </article>
 
-            <p class="copyright">
 
-                ©
-                <span id="currentYear"></span>
-                NovaRed Soluciones.
 
-                Proyecto demostrativo.
+          <article>
 
+            <span class="benefit-number">
+              02
+            </span>
+
+            <div class="benefit-icon">
+              🤝
+            </div>
+
+            <h3>
+              Atención cercana
+            </h3>
+
+            <p>
+              Un servicio pensado para clientes de
+              nuestra propia zona.
             </p>
+
+          </article>
+
+
+
+          <article>
+
+            <span class="benefit-number">
+              03
+            </span>
+
+            <div class="benefit-icon">
+              🛠️
+            </div>
+
+            <h3>
+              Soporte técnico
+            </h3>
+
+            <p>
+              Atención cuando necesites ayuda con
+              tu conexión.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <span class="benefit-number">
+              04
+            </span>
+
+            <div class="benefit-icon">
+              💰
+            </div>
+
+            <h3>
+              Planes accesibles
+            </h3>
+
+            <p>
+              Alternativas pensadas para distintos
+              presupuestos.
+            </p>
+
+          </article>
+
 
         </div>
 
-    </footer>
+      </div>
+
+    </section>
 
 
 
-    <!-- JAVASCRIPT EXTERNO -->
+    <!-- =================================================
+         PASOS
+    ================================================== -->
 
-    <script src="script.js"></script>
+    <section class="steps-section">
+
+      <div class="container">
+
+
+        <div class="steps-heading">
+
+          <span>
+            CONTRATAR ES FÁCIL
+          </span>
+
+          <h2>
+            De tu consulta a tu conexión
+          </h2>
+
+        </div>
+
+
+
+        <div class="steps-line">
+
+
+          <article>
+
+            <div class="step-circle">
+              1
+            </div>
+
+            <h3>
+              Consulta
+            </h3>
+
+            <p>
+              Envíanos tu ubicación.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <div class="step-circle">
+              2
+            </div>
+
+            <h3>
+              Validamos
+            </h3>
+
+            <p>
+              Revisamos cobertura.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <div class="step-circle">
+              3
+            </div>
+
+            <h3>
+              Eliges
+            </h3>
+
+            <p>
+              Escoges tu plan.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <div class="step-circle">
+              4
+            </div>
+
+            <h3>
+              Instalamos
+            </h3>
+
+            <p>
+              Dejamos todo listo.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         FAQ
+    ================================================== -->
+
+    <section class="faq-section">
+
+      <div class="container faq-layout">
+
+
+        <div class="faq-title">
+
+          <span class="eyebrow-orange">
+            PREGUNTAS
+          </span>
+
+          <h2>
+            Antes de contratar
+          </h2>
+
+          <p>
+            Estas son algunas dudas frecuentes que pueden
+            tener nuestros clientes.
+          </p>
+
+        </div>
+
+
+
+        <div class="faq-list">
+
+
+          <article class="faq-item">
+
+            <button class="faq-question">
+
+              ¿Cómo sé si hay cobertura en mi casa?
+
+              <span>
+                +
+              </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <p>
+                Puedes revisar el mapa o enviarnos tu
+                ubicación por WhatsApp para realizar
+                una validación.
+              </p>
+
+            </div>
+
+          </article>
+
+
+
+          <article class="faq-item">
+
+            <button class="faq-question">
+
+              ¿La instalación tiene costo?
+
+              <span>
+                +
+              </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <p>
+                El costo de instalación dependerá de las
+                condiciones comerciales vigentes y la ubicación.
+              </p>
+
+            </div>
+
+          </article>
+
+
+
+          <article class="faq-item">
+
+            <button class="faq-question">
+
+              ¿Tienen Internet más cable?
+
+              <span>
+                +
+              </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <p>
+                Sí. En esta propuesta mostramos planes
+                combinados desde S/ 80 mensuales.
+              </p>
+
+            </div>
+
+          </article>
+
+
+
+          <article class="faq-item">
+
+            <button class="faq-question">
+
+              ¿Puedo contratar para un negocio?
+
+              <span>
+                +
+              </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <p>
+                Sí. Podemos validar cobertura y recomendar
+                una alternativa según tus necesidades.
+              </p>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         CONTACTO
+    ================================================== -->
+
+    <section
+      class="contact-section"
+      id="contacto"
+    >
+
+      <div class="container contact-card">
+
+
+        <div class="contact-copy">
+
+
+          <span>
+            📲 HABLEMOS
+          </span>
+
+
+          <h2>
+            Tu próximo Internet puede empezar aquí.
+          </h2>
+
+
+          <p>
+            Déjanos tus datos y abre una conversación
+            directamente por WhatsApp.
+          </p>
+
+
+
+          <div class="contact-features">
+
+            <span>
+              ✓ Validación de cobertura
+            </span>
+
+            <span>
+              ✓ Información de planes
+            </span>
+
+            <span>
+              ✓ Coordinación de instalación
+            </span>
+
+          </div>
+
+
+        </div>
+
+
+
+        <form
+          class="contact-form"
+          id="contactForm"
+        >
+
+
+          <div class="form-row">
+
+
+            <div>
+
+              <label for="name">
+                Nombre
+              </label>
+
+              <input
+                type="text"
+                id="name"
+                placeholder="Tu nombre"
+                required
+              >
+
+            </div>
+
+
+
+            <div>
+
+              <label for="phone">
+                Celular
+              </label>
+
+              <input
+                type="tel"
+                id="phone"
+                placeholder="999 999 999"
+                required
+              >
+
+            </div>
+
+
+          </div>
+
+
+
+          <div>
+
+            <label for="district">
+              Zona
+            </label>
+
+            <input
+              type="text"
+              id="district"
+              placeholder="Ej. Chincha Alta"
+              required
+            >
+
+          </div>
+
+
+
+          <div>
+
+            <label for="plan">
+              Plan que te interesa
+            </label>
+
+
+            <select id="plan">
+
+              <option>
+                Internet Solo - S/ 50
+              </option>
+
+              <option>
+                Internet + Cable - S/ 80
+              </option>
+
+              <option>
+                Dúo Plus - S/ 90
+              </option>
+
+              <option>
+                Quiero asesoría
+              </option>
+
+            </select>
+
+          </div>
+
+
+
+          <button
+            type="submit"
+            class="contact-button"
+          >
+            Enviar por WhatsApp
+            <span>→</span>
+          </button>
+
+
+        </form>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- =====================================================
+       WHATSAPP FLOTANTE
+  ====================================================== -->
+
+  <a
+    href="#"
+    id="whatsappFloating"
+    class="whatsapp-floating"
+  >
+
+    <span>
+      💬
+    </span>
+
+    <div>
+
+      <small>
+        ¿Tienes dudas?
+      </small>
+
+      <strong>
+        Escríbenos
+      </strong>
+
+    </div>
+
+  </a>
+
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer class="footer">
+
+    <div class="container footer-content">
+
+
+      <div class="footer-logo">
+
+        <img
+          src="images/logo.png"
+          alt="Grupo Astyp"
+        >
+
+        <p>
+          Conectando hogares y negocios.
+        </p>
+
+      </div>
+
+
+
+      <div>
+
+        <strong>
+          Navegación
+        </strong>
+
+        <a href="#planes">
+          Planes
+        </a>
+
+        <a href="#promociones">
+          Promociones
+        </a>
+
+        <a href="#cobertura">
+          Cobertura
+        </a>
+
+      </div>
+
+
+
+      <div>
+
+        <strong>
+          Servicio
+        </strong>
+
+        <span>
+          Internet
+        </span>
+
+        <span>
+          Internet + Cable
+        </span>
+
+        <span>
+          Soporte técnico
+        </span>
+
+      </div>
+
+
+
+      <div>
+
+        <strong>
+          Atención
+        </strong>
+
+        <span>
+          Chincha, Perú
+        </span>
+
+        <span>
+          Sujeto a cobertura
+        </span>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="container footer-bottom">
+
+      <span>
+        © <span id="year"></span> Grupo Astyp
+      </span>
+
+      <span>
+        Propuesta web demostrativa
+      </span>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- LEAFLET -->
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+
+  <!-- JS -->
+
+  <script src="script.js"></script>
+
 
 </body>
 

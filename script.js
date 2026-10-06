@@ -19,21 +19,21 @@ function closeMenu() {
 
 
 menuToggle.addEventListener("click", () => {
-  const open = menu.classList.toggle("open");
+  const isOpen = menu.classList.toggle("open");
 
   menuToggle.classList.toggle(
     "active",
-    open
+    isOpen
   );
 
   menuToggle.setAttribute(
     "aria-expanded",
-    String(open)
+    String(isOpen)
   );
 
   document.body.classList.toggle(
     "menu-open",
-    open
+    isOpen
   );
 });
 
@@ -71,16 +71,9 @@ function openLightbox(src, alt) {
   lightboxImage.src = src;
 
   lightboxImage.alt =
-    alt || "Trabajo Grupo Astyp";
+    alt || "Grupo Astyp";
 
-  lightbox.classList.add(
-    "open"
-  );
-
-  lightbox.setAttribute(
-    "aria-hidden",
-    "false"
-  );
+  lightbox.classList.add("open");
 
   document.body.classList.add(
     "lightbox-open"
@@ -89,14 +82,7 @@ function openLightbox(src, alt) {
 
 
 function closeLightbox() {
-  lightbox.classList.remove(
-    "open"
-  );
-
-  lightbox.setAttribute(
-    "aria-hidden",
-    "true"
-  );
+  lightbox.classList.remove("open");
 
   document.body.classList.remove(
     "lightbox-open"
@@ -146,7 +132,7 @@ document.addEventListener(
 );
 
 
-// Aparición de secciones
+// Aparición de contenido
 
 const revealItems =
   document.querySelectorAll(
@@ -154,7 +140,7 @@ const revealItems =
   );
 
 
-const observer =
+const revealObserver =
   new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -163,7 +149,7 @@ const observer =
             "visible"
           );
 
-          observer.unobserve(
+          revealObserver.unobserve(
             entry.target
           );
         }
@@ -176,16 +162,14 @@ const observer =
 
 
 revealItems.forEach((item) => {
-  observer.observe(item);
+  revealObserver.observe(item);
 });
 
 
 // Año
 
 const year =
-  document.getElementById(
-    "year"
-  );
+  document.getElementById("year");
 
 
 if (year) {

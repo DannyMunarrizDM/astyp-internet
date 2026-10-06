@@ -1,13 +1,13 @@
-const menuButton = document.querySelector(".menu-button");
-const navMenu = document.querySelector(".nav-menu");
-const navLinks = document.querySelectorAll(".nav-menu a");
+const menuToggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+const menuLinks = document.querySelectorAll(".menu a");
 
 
 function closeMenu() {
-  menuButton.classList.remove("active");
-  navMenu.classList.remove("open");
+  menu.classList.remove("open");
+  menuToggle.classList.remove("active");
 
-  menuButton.setAttribute(
+  menuToggle.setAttribute(
     "aria-expanded",
     "false"
   );
@@ -18,38 +18,32 @@ function closeMenu() {
 }
 
 
-menuButton.addEventListener("click", () => {
+menuToggle.addEventListener("click", () => {
+  const open = menu.classList.toggle("open");
 
-  const isOpen =
-    navMenu.classList.toggle("open");
-
-  menuButton.classList.toggle(
+  menuToggle.classList.toggle(
     "active",
-    isOpen
+    open
   );
 
-  menuButton.setAttribute(
+  menuToggle.setAttribute(
     "aria-expanded",
-    String(isOpen)
+    String(open)
   );
 
   document.body.classList.toggle(
     "menu-open",
-    isOpen
+    open
   );
-
 });
 
 
-navLinks.forEach((link) => {
-
+menuLinks.forEach((link) => {
   link.addEventListener(
     "click",
     closeMenu
   );
-
 });
-
 
 
 // Galería
@@ -67,14 +61,13 @@ const lightbox =
 const lightboxImage =
   lightbox.querySelector("img");
 
-const closeLightboxButton =
+const lightboxClose =
   document.querySelector(
     ".lightbox-close"
   );
 
 
 function openLightbox(src, alt) {
-
   lightboxImage.src = src;
 
   lightboxImage.alt =
@@ -92,12 +85,10 @@ function openLightbox(src, alt) {
   document.body.classList.add(
     "lightbox-open"
   );
-
 }
 
 
 function closeLightbox() {
-
   lightbox.classList.remove(
     "open"
   );
@@ -112,31 +103,23 @@ function closeLightbox() {
   );
 
   lightboxImage.src = "";
-
 }
 
 
 galleryItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    const image =
+      item.querySelector("img");
 
-  item.addEventListener(
-    "click",
-    () => {
-
-      const image =
-        item.querySelector("img");
-
-      openLightbox(
-        item.dataset.image,
-        image.alt
-      );
-
-    }
-  );
-
+    openLightbox(
+      item.dataset.image,
+      image.alt
+    );
+  });
 });
 
 
-closeLightboxButton.addEventListener(
+lightboxClose.addEventListener(
   "click",
   closeLightbox
 );
@@ -145,11 +128,9 @@ closeLightboxButton.addEventListener(
 lightbox.addEventListener(
   "click",
   (event) => {
-
     if (event.target === lightbox) {
       closeLightbox();
     }
-
   }
 );
 
@@ -157,69 +138,46 @@ lightbox.addEventListener(
 document.addEventListener(
   "keydown",
   (event) => {
-
     if (event.key === "Escape") {
       closeLightbox();
       closeMenu();
     }
-
   }
 );
 
 
+// Aparición de secciones
 
-// Animación al aparecer
-
-const revealElements =
+const revealItems =
   document.querySelectorAll(
     ".reveal"
   );
 
 
-const revealObserver =
+const observer =
   new IntersectionObserver(
     (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(
+            "visible"
+          );
 
-      entries.forEach(
-        (entry) => {
-
-          if (
-            entry.isIntersecting
-          ) {
-
+          observer.unobserve(
             entry.target
-              .classList
-              .add(
-                "is-visible"
-              );
-
-            revealObserver
-              .unobserve(
-                entry.target
-              );
-
-          }
-
+          );
         }
-      );
-
+      });
     },
     {
-      threshold: 0.12
+      threshold: 0.1
     }
   );
 
 
-revealElements.forEach(
-  (element) => {
-
-    revealObserver.observe(
-      element
-    );
-
-  }
-);
-
+revealItems.forEach((item) => {
+  observer.observe(item);
+});
 
 
 // Año
@@ -231,9 +189,6 @@ const year =
 
 
 if (year) {
-
   year.textContent =
-    new Date()
-      .getFullYear();
-
+    new Date().getFullYear();
 }

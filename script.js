@@ -27,24 +27,19 @@ navLinks.forEach((link) => {
 const galleryItems = document.querySelectorAll(".gallery-item");
 const lightbox = document.querySelector(".lightbox");
 const lightboxImage = lightbox.querySelector("img");
-const lightboxClose = document.querySelector(".lightbox-close");
+const closeLightboxButton = document.querySelector(".lightbox-close");
 
 function openLightbox(src, alt) {
   lightboxImage.src = src;
-  lightboxImage.alt = alt || "Trabajo de Grupo Astyp";
+  lightboxImage.alt = alt || "Trabajo Grupo Astyp";
 
   lightbox.classList.add("open");
-  lightbox.setAttribute("aria-hidden", "false");
-
   document.body.classList.add("lightbox-open");
 }
 
 function closeLightbox() {
   lightbox.classList.remove("open");
-  lightbox.setAttribute("aria-hidden", "true");
-
   document.body.classList.remove("lightbox-open");
-
   lightboxImage.src = "";
 }
 
@@ -59,7 +54,7 @@ galleryItems.forEach((item) => {
   });
 });
 
-lightboxClose.addEventListener("click", closeLightbox);
+closeLightboxButton.addEventListener("click", closeLightbox);
 
 lightbox.addEventListener("click", (event) => {
   if (event.target === lightbox) {
@@ -77,5 +72,8 @@ document.addEventListener("keydown", (event) => {
 
 // Año
 
-document.getElementById("year").textContent =
-  new Date().getFullYear();
+const year = document.getElementById("year");
+
+if (year) {
+  year.textContent = new Date().getFullYear();
+}

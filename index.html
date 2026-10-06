@@ -3,35 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#06172d">
+  <meta name="theme-color" content="#061a33">
 
   <meta
     name="description"
-    content="Grupo Astyp - Internet por fibra óptica para tu hogar. Conoce nuestros planes, promociones y cobertura."
+    content="Grupo Astyp - Internet por fibra óptica y TV por cable CATV para tu hogar. Consulta nuestros planes y cobertura."
   >
 
-  <title>Grupo Astyp | Internet & Telecomunicaciones</title>
+  <title>Grupo Astyp | Internet + CATV</title>
 
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 
 <body>
 
   <header class="header">
-
-    <div class="container navbar">
+    <div class="container nav">
 
       <a href="#inicio" class="brand" aria-label="Grupo Astyp">
-
-        <span class="brand-logo">
-          <img src="images/logo.png" alt="Grupo Astyp">
-        </span>
-
+        <img src="images/logo.png" alt="Grupo Astyp">
       </a>
 
-
       <button
-        class="menu-button"
+        class="menu-toggle"
         type="button"
         aria-label="Abrir menú"
         aria-expanded="false"
@@ -41,75 +35,75 @@
         <span></span>
       </button>
 
-
-      <nav class="nav-menu">
-
+      <nav class="menu">
         <a href="#inicio">Inicio</a>
         <a href="#planes">Planes</a>
+        <a href="#catv">CATV</a>
         <a href="#nosotros">Nosotros</a>
-        <a href="#trabajos">Nuestro trabajo</a>
+        <a href="#trabajos">Trabajos</a>
         <a href="#cobertura">Cobertura</a>
 
         <a
-          class="nav-whatsapp"
+          class="menu-cta"
           href="https://wa.me/51938192616?text=Hola%20Grupo%20Astyp,%20quiero%20información%20sobre%20sus%20planes."
           target="_blank"
           rel="noopener"
         >
           WhatsApp
         </a>
-
       </nav>
 
     </div>
-
   </header>
 
 
   <main>
 
-
     <!-- Portada -->
-
     <section class="hero" id="inicio">
 
       <img
-        class="hero-image"
+        class="hero-photo"
         src="images/equipo-astyp.png"
-        alt="Equipo técnico Grupo Astyp"
+        alt="Equipo técnico de Grupo Astyp"
       >
 
-      <div class="hero-overlay"></div>
-
-      <div class="hero-glow hero-glow-one"></div>
-      <div class="hero-glow hero-glow-two"></div>
-
+      <div class="hero-filter"></div>
+      <div class="hero-blue-glow"></div>
+      <div class="hero-orange-glow"></div>
 
       <div class="container hero-content">
 
         <div class="hero-copy reveal">
 
-          <span class="hero-tag">
-            Fibra óptica para tu hogar
+          <span class="hero-pill">
+            Fibra óptica + TV por cable
           </span>
 
           <h1>
-            Internet que te conecta con
-            <span>lo que más importa</span>
+            Internet rápido.
+            <span>TV por cable real.</span>
           </h1>
 
-          <p>
-            Conéctate, disfruta y comparte con una red preparada para
-            acompañarte todos los días.
+          <p class="hero-main-text">
+            Conecta tu hogar con Grupo Astyp y disfruta internet por fibra óptica
+            junto a planes Dúo con televisión por cable CATV.
           </p>
 
+          <div class="catv-message">
+            <span class="catv-icon">TV</span>
 
-          <div class="hero-buttons">
+            <div>
+              <strong>CATV, no aplicativo</strong>
+              <small>
+                Nuestros planes Dúo incluyen TV por cable.
+              </small>
+            </div>
+          </div>
 
-            <a
-              href="#planes"
-              class="button button-orange"
-            >
+          <div class="hero-actions">
+
+            <a href="#planes" class="btn btn-orange">
               Ver planes
             </a>
 
@@ -117,45 +111,39 @@
               href="https://wa.me/51938192616?text=Hola%20Grupo%20Astyp,%20quiero%20consultar%20cobertura%20en%20mi%20zona."
               target="_blank"
               rel="noopener"
-              class="button button-blue"
+              class="btn btn-blue"
             >
               Consultar cobertura
             </a>
 
           </div>
 
+        </div>
 
-          <div class="hero-points">
+      </div>
 
-            <div>
-              <span class="point-icon">✓</span>
+      <div class="hero-bottom">
 
-              <div>
-                <strong>Fibra óptica</strong>
-                <small>Conexión para tu hogar</small>
-              </div>
-            </div>
+        <div class="container hero-stats">
 
+          <div>
+            <strong>FTTH</strong>
+            <span>Fibra hasta tu hogar</span>
+          </div>
 
-            <div>
-              <span class="point-icon">✓</span>
+          <div>
+            <strong>CATV</strong>
+            <span>TV por cable</span>
+          </div>
 
-              <div>
-                <strong>Soporte técnico</strong>
-                <small>Atención cercana</small>
-              </div>
-            </div>
+          <div>
+            <strong>Soporte</strong>
+            <span>Atención técnica</span>
+          </div>
 
-
-            <div>
-              <span class="point-icon">✓</span>
-
-              <div>
-                <strong>Instalación</strong>
-                <small>Personal capacitado</small>
-              </div>
-            </div>
-
+          <div>
+            <strong>WhatsApp</strong>
+            <span>Atención rápida</span>
           </div>
 
         </div>
@@ -165,31 +153,39 @@
     </section>
 
 
+    <!-- Qué ofrecemos -->
+    <section class="services">
 
-    <!-- Franja -->
+      <div class="container">
 
-    <section class="trust-strip">
+        <div class="services-grid">
 
-      <div class="container trust-grid">
+          <article class="service-card reveal">
+            <div class="service-icon blue">01</div>
+            <h3>Internet por fibra</h3>
+            <p>
+              Conexión FTTH para disfrutar tus dispositivos, contenidos,
+              estudios y trabajo desde casa.
+            </p>
+          </article>
 
-        <div>
-          <strong>100%</strong>
-          <span>Fibra óptica</span>
-        </div>
+          <article class="service-card featured-service reveal">
+            <div class="service-icon orange">TV</div>
+            <h3>TV por cable CATV</h3>
+            <p>
+              Televisión por cable en nuestros planes Dúo.
+              No necesitas depender de un aplicativo.
+            </p>
+          </article>
 
-        <div>
-          <strong>FTTH</strong>
-          <span>Conexión directa</span>
-        </div>
+          <article class="service-card reveal">
+            <div class="service-icon blue">03</div>
+            <h3>Equipo técnico</h3>
+            <p>
+              Instalaciones y trabajos realizados por personal de Grupo Astyp.
+            </p>
+          </article>
 
-        <div>
-          <strong>ASTYP</strong>
-          <span>Equipo técnico</span>
-        </div>
-
-        <div>
-          <strong>WhatsApp</strong>
-          <span>Atención rápida</span>
         </div>
 
       </div>
@@ -197,312 +193,280 @@
     </section>
 
 
-
     <!-- Planes -->
+    <section class="plans-section" id="planes">
 
-    <section class="section plans-section" id="planes">
-
-      <div class="plans-decoration plans-decoration-one"></div>
-      <div class="plans-decoration plans-decoration-two"></div>
-
+      <div class="plans-glow plans-glow-left"></div>
+      <div class="plans-glow plans-glow-right"></div>
 
       <div class="container">
 
-        <div class="section-heading reveal">
+        <div class="section-title reveal">
 
-          <span class="section-tag">
-            Planes y promociones
+          <span class="section-kicker">
+            Planes para tu hogar
           </span>
 
           <h2>
-            Elige el plan que va contigo
+            Elige cómo quieres conectarte
           </h2>
 
           <p>
-            Conéctate hoy con precios promocionales durante tus primeros
-            3 meses.
+            Internet solo o disfruta nuestro Dúo con internet + televisión CATV.
           </p>
 
         </div>
 
 
-        <div class="plans-grid">
+        <div class="internet-only-block reveal">
 
+          <div class="internet-only-info">
 
-          <article class="plan-card reveal">
-
-            <div class="plan-line"></div>
-
-            <span class="plan-type">
+            <span class="small-label">
               Internet solo
             </span>
 
             <h3>
-              100 <small>Mbps</small>
+              100 Mbps
             </h3>
 
+            <p>
+              Fibra óptica para tu hogar.
+            </p>
 
-            <div class="price">
-
-              <span class="currency">
-                S/
-              </span>
-
-              <strong>
-                45
-              </strong>
-
-              <span class="period">
-                / mes
-              </span>
-
+            <div class="mini-benefits">
+              <span>✓ FTTH</span>
+              <span>✓ Soporte técnico</span>
+              <span>✓ 100 Mbps</span>
             </div>
 
+          </div>
 
-            <div class="promo">
+
+          <div class="internet-price">
+
+            <span class="promo-label">
+              Promoción
+            </span>
+
+            <div class="big-price">
+              <small>S/</small>
+              <strong>45</strong>
+              <span>/ mes</span>
+            </div>
+
+            <p>
               Primeros 3 meses
+            </p>
+
+            <small class="after-price">
+              Desde el 4.º mes: <strong>S/ 50 mensuales</strong>
+            </small>
+
+          </div>
+
+
+          <a
+            href="https://wa.me/51938192616?text=Hola%20Grupo%20Astyp,%20quiero%20el%20plan%20de%20Internet%20100%20Mbps%20por%20S%2F45."
+            target="_blank"
+            rel="noopener"
+            class="btn internet-button"
+          >
+            Quiero internet
+          </a>
+
+        </div>
+
+
+        <div class="duo-heading reveal">
+
+          <div>
+            <span class="duo-label">
+              Internet + CATV
+            </span>
+
+            <h3>
+              Planes Dúo
+            </h3>
+          </div>
+
+          <div class="catv-reminder">
+            <strong>TV por cable CATV</strong>
+            <span>No es televisión por aplicativo</span>
+          </div>
+
+        </div>
+
+
+        <div class="duo-plans">
+
+          <article class="duo-card reveal">
+
+            <div class="duo-card-top">
+              <span class="duo-badge">
+                Dúo + CATV
+              </span>
+
+              <h3>
+                100
+                <small>Mbps</small>
+              </h3>
             </div>
 
+            <div class="duo-price">
+              <span>S/</span>
+              <strong>65</strong>
+              <small>/ mes</small>
+            </div>
 
-            <ul class="plan-features">
+            <p class="duo-promo">
+              Primeros 3 meses
+            </p>
+
+            <div class="catv-included">
+              <span>TV</span>
+
+              <div>
+                <strong>Incluye CATV</strong>
+                <small>Televisión por cable</small>
+              </div>
+            </div>
+
+            <ul>
               <li>Internet 100 Mbps</li>
+              <li>TV por cable CATV</li>
               <li>Fibra óptica</li>
               <li>Atención técnica</li>
-              <li>Ideal para el hogar</li>
             </ul>
 
-
-            <div class="regular-price">
-
-              <span>
-                Desde el 4.º mes
-              </span>
-
-              <strong>
-                S/ 50 mensuales
-              </strong>
-
+            <div class="duo-regular">
+              Luego:
+              <strong>S/ 80 mensuales</strong>
             </div>
 
-
             <a
-              class="button plan-button"
-              href="https://wa.me/51938192616?text=Hola%20Grupo%20Astyp,%20quiero%20el%20plan%20Internet%20Solo%20100%20Mbps%20de%20S%2F45."
+              href="https://wa.me/51938192616?text=Hola%20Grupo%20Astyp,%20quiero%20el%20plan%20Dúo%20100%20Mbps%20más%20CATV%20por%20S%2F65."
               target="_blank"
               rel="noopener"
+              class="btn duo-button"
             >
-              Quiero este plan
+              Quiero este Dúo
             </a>
 
           </article>
 
 
+          <article class="duo-card favorite reveal">
 
-          <article class="plan-card featured reveal">
-
-            <span class="featured-label">
+            <span class="favorite-tag">
               Más elegido
             </span>
 
-            <div class="plan-line"></div>
-
-            <span class="plan-type">
-              Dúo + Internet
-            </span>
-
-            <h3>
-              100 <small>Mbps</small>
-            </h3>
-
-
-            <div class="price">
-
-              <span class="currency">
-                S/
+            <div class="duo-card-top">
+              <span class="duo-badge">
+                Dúo + CATV
               </span>
 
-              <strong>
-                65
-              </strong>
-
-              <span class="period">
-                / mes
-              </span>
-
+              <h3>
+                150
+                <small>Mbps</small>
+              </h3>
             </div>
 
+            <div class="duo-price">
+              <span>S/</span>
+              <strong>75</strong>
+              <small>/ mes</small>
+            </div>
 
-            <div class="promo">
+            <p class="duo-promo">
               Primeros 3 meses
+            </p>
+
+            <div class="catv-included">
+              <span>TV</span>
+
+              <div>
+                <strong>Incluye CATV</strong>
+                <small>Televisión por cable</small>
+              </div>
             </div>
 
-
-            <ul class="plan-features">
-              <li>Plan Dúo</li>
-              <li>Internet 100 Mbps</li>
-              <li>Fibra óptica</li>
-              <li>Atención técnica</li>
-            </ul>
-
-
-            <div class="regular-price">
-
-              <span>
-                Precio regular
-              </span>
-
-              <strong>
-                S/ 80 mensuales
-              </strong>
-
-            </div>
-
-
-            <a
-              class="button plan-button"
-              href="https://wa.me/51938192616?text=Hola%20Grupo%20Astyp,%20quiero%20el%20plan%20Dúo%20más%20Internet%20100%20Mbps%20de%20S%2F65."
-              target="_blank"
-              rel="noopener"
-            >
-              Quiero este plan
-            </a>
-
-          </article>
-
-
-
-          <article class="plan-card reveal">
-
-            <div class="plan-line"></div>
-
-            <span class="plan-type">
-              Dúo + Internet
-            </span>
-
-            <h3>
-              150 <small>Mbps</small>
-            </h3>
-
-
-            <div class="price">
-
-              <span class="currency">
-                S/
-              </span>
-
-              <strong>
-                75
-              </strong>
-
-              <span class="period">
-                / mes
-              </span>
-
-            </div>
-
-
-            <div class="promo">
-              Primeros 3 meses
-            </div>
-
-
-            <ul class="plan-features">
-              <li>Plan Dúo</li>
+            <ul>
               <li>Internet 150 Mbps</li>
+              <li>TV por cable CATV</li>
               <li>Fibra óptica</li>
-              <li>Varios dispositivos</li>
+              <li>Ideal para varios equipos</li>
             </ul>
 
-
-            <div class="regular-price">
-
-              <span>
-                Precio regular
-              </span>
-
-              <strong>
-                S/ 90 mensuales
-              </strong>
-
+            <div class="duo-regular">
+              Luego:
+              <strong>S/ 90 mensuales</strong>
             </div>
 
-
             <a
-              class="button plan-button"
-              href="https://wa.me/51938192616?text=Hola%20Grupo%20Astyp,%20quiero%20el%20plan%20Dúo%20más%20Internet%20150%20Mbps%20de%20S%2F75."
+              href="https://wa.me/51938192616?text=Hola%20Grupo%20Astyp,%20quiero%20el%20plan%20Dúo%20150%20Mbps%20más%20CATV%20por%20S%2F75."
               target="_blank"
               rel="noopener"
+              class="btn duo-button"
             >
-              Quiero este plan
+              Quiero este Dúo
             </a>
 
           </article>
 
 
+          <article class="duo-card reveal">
 
-          <article class="plan-card reveal">
-
-            <div class="plan-line"></div>
-
-            <span class="plan-type">
-              Dúo + Internet
-            </span>
-
-            <h3>
-              300 <small>Mbps</small>
-            </h3>
-
-
-            <div class="price">
-
-              <span class="currency">
-                S/
+            <div class="duo-card-top">
+              <span class="duo-badge">
+                Dúo + CATV
               </span>
 
-              <strong>
-                105
-              </strong>
-
-              <span class="period">
-                / mes
-              </span>
-
+              <h3>
+                300
+                <small>Mbps</small>
+              </h3>
             </div>
 
+            <div class="duo-price">
+              <span>S/</span>
+              <strong>105</strong>
+              <small>/ mes</small>
+            </div>
 
-            <div class="promo">
+            <p class="duo-promo">
               Primeros 3 meses
+            </p>
+
+            <div class="catv-included">
+              <span>TV</span>
+
+              <div>
+                <strong>Incluye CATV</strong>
+                <small>Televisión por cable</small>
+              </div>
             </div>
 
-
-            <ul class="plan-features">
-              <li>Plan Dúo</li>
+            <ul>
               <li>Internet 300 Mbps</li>
+              <li>TV por cable CATV</li>
               <li>Fibra óptica</li>
-              <li>Mayor capacidad</li>
+              <li>Mayor capacidad para tu hogar</li>
             </ul>
 
-
-            <div class="regular-price">
-
-              <span>
-                Precio regular
-              </span>
-
-              <strong>
-                S/ 120 mensuales
-              </strong>
-
+            <div class="duo-regular">
+              Luego:
+              <strong>S/ 120 mensuales</strong>
             </div>
 
-
             <a
-              class="button plan-button"
-              href="https://wa.me/51938192616?text=Hola%20Grupo%20Astyp,%20quiero%20el%20plan%20Dúo%20más%20Internet%20300%20Mbps%20de%20S%2F105."
+              href="https://wa.me/51938192616?text=Hola%20Grupo%20Astyp,%20quiero%20el%20plan%20Dúo%20300%20Mbps%20más%20CATV%20por%20S%2F105."
               target="_blank"
               rel="noopener"
+              class="btn duo-button"
             >
-              Quiero este plan
+              Quiero este Dúo
             </a>
 
           </article>
@@ -521,41 +485,126 @@
     </section>
 
 
+    <!-- CATV -->
+    <section class="catv-section" id="catv">
 
-    <!-- Nosotros -->
+      <div class="catv-light"></div>
 
-    <section class="section about-section" id="nosotros">
+      <div class="container catv-layout">
 
-      <div class="container about-grid">
+        <div class="catv-copy reveal">
+
+          <span class="catv-title-tag">
+            Importante
+          </span>
+
+          <h2>
+            TV por cable.
+            <span>Sin depender de una app.</span>
+          </h2>
+
+          <p>
+            Los planes Dúo de Grupo Astyp incluyen servicio de
+            televisión por cable CATV.
+          </p>
+
+          <p>
+            No necesitas ingresar a una aplicación para disfrutar
+            el servicio de TV incluido en tu plan.
+          </p>
+
+          <div class="catv-list">
+
+            <span>✓ CATV incluido en planes Dúo</span>
+            <span>✓ TV por cable</span>
+            <span>✓ Internet por fibra óptica</span>
+
+          </div>
+
+        </div>
 
 
-        <div class="about-photo reveal">
+        <div class="tv-visual reveal">
 
-          <img
-            src="images/trabajo-fibra-01.png"
-            alt="Trabajo técnico de Grupo Astyp"
-          >
+          <div class="tv-screen">
 
-          <div class="photo-gradient"></div>
+            <div class="tv-screen-content">
 
+              <span class="tv-mini">
+                GRUPO ASTYP
+              </span>
 
-          <div class="photo-brand">
-
-            <div class="mini-logo">
-              <img
-                src="images/logo.png"
-                alt="Grupo Astyp"
-              >
-            </div>
-
-
-            <div>
               <strong>
-                Trabajo real
+                CATV
               </strong>
 
+              <p>
+                Televisión por cable
+              </p>
+
+              <div class="tv-line"></div>
+
+              <span class="not-app">
+                NO ES POR APLICATIVO
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="tv-base"></div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Nosotros -->
+    <section class="about-section" id="nosotros">
+
+      <div class="container about-layout">
+
+        <div class="about-copy reveal">
+
+          <span class="section-kicker">
+            Grupo Astyp
+          </span>
+
+          <h2>
+            Una red que se construye
+            <span>todos los días</span>
+          </h2>
+
+          <p>
+            Detrás de cada conexión existe trabajo técnico,
+            infraestructura y personal trabajando en campo.
+          </p>
+
+          <div class="about-values">
+
+            <div>
+              <strong>01</strong>
+
               <span>
-                Nuestro equipo técnico en campo
+                Instalaciones profesionales
+              </span>
+            </div>
+
+            <div>
+              <strong>02</strong>
+
+              <span>
+                Trabajo con fibra óptica
+              </span>
+            </div>
+
+            <div>
+              <strong>03</strong>
+
+              <span>
+                Atención local
               </span>
             </div>
 
@@ -564,91 +613,22 @@
         </div>
 
 
+        <div class="about-media reveal">
 
-        <div class="about-content reveal">
+          <img
+            src="images/trabajo-fibra-01.png"
+            alt="Técnico Grupo Astyp trabajando en fibra óptica"
+          >
 
-          <span class="section-tag">
-            Nosotros
-          </span>
+          <div class="about-photo-overlay"></div>
 
-          <h2>
-            Tecnología que se construye
-            <span>en cada conexión</span>
-          </h2>
+          <div class="about-photo-card">
 
-          <p>
-            En Grupo Astyp trabajamos día a día para mantener y ampliar
-            nuestra infraestructura de fibra óptica.
-          </p>
+            <img src="images/logo.png" alt="Grupo Astyp">
 
-          <p>
-            Cada instalación representa trabajo técnico, organización
-            y compromiso con nuestros clientes.
-          </p>
-
-
-          <div class="benefits">
-
-
-            <div class="benefit">
-
-              <span class="benefit-icon">
-                01
-              </span>
-
-              <div>
-                <strong>
-                  Instalación profesional
-                </strong>
-
-                <p>
-                  Personal preparado para realizar trabajos
-                  ordenados y seguros.
-                </p>
-              </div>
-
-            </div>
-
-
-
-            <div class="benefit">
-
-              <span class="benefit-icon">
-                02
-              </span>
-
-              <div>
-                <strong>
-                  Fibra óptica
-                </strong>
-
-                <p>
-                  Infraestructura diseñada para llevar conexión
-                  hasta nuestros clientes.
-                </p>
-              </div>
-
-            </div>
-
-
-
-            <div class="benefit">
-
-              <span class="benefit-icon">
-                03
-              </span>
-
-              <div>
-                <strong>
-                  Atención cercana
-                </strong>
-
-                <p>
-                  Estamos disponibles para ayudarte antes y
-                  después de tu instalación.
-                </p>
-              </div>
-
+            <div>
+              <strong>Equipo Astyp</strong>
+              <span>Trabajando en nuestra red</span>
             </div>
 
           </div>
@@ -660,25 +640,25 @@
     </section>
 
 
-
     <!-- Galería -->
-
-    <section class="section work-section" id="trabajos">
+    <section class="gallery-section" id="trabajos">
 
       <div class="container">
 
-        <div class="section-heading light-heading reveal">
+        <div class="gallery-heading reveal">
 
-          <span class="section-tag blue-tag">
-            Nuestro trabajo
-          </span>
+          <div>
+            <span class="gallery-kicker">
+              Trabajo real
+            </span>
 
-          <h2>
-            Conoce cómo trabajamos
-          </h2>
+            <h2>
+              Mira cómo trabajamos
+            </h2>
+          </div>
 
           <p>
-            Fotos reales de nuestro equipo y nuestra infraestructura.
+            Nuestro equipo, herramientas e infraestructura en campo.
           </p>
 
         </div>
@@ -686,34 +666,23 @@
 
         <div class="gallery">
 
-
           <button
-            class="gallery-item gallery-large reveal"
+            class="gallery-item gallery-big reveal"
             type="button"
             data-image="images/equipo-campo.png"
           >
-
             <img
               src="images/equipo-campo.png"
-              alt="Equipo técnico de Grupo Astyp"
+              alt="Equipo Grupo Astyp"
             >
 
-            <div class="gallery-overlay"></div>
+            <div class="gallery-shade"></div>
 
-            <div class="gallery-caption">
-
-              <span class="gallery-category">
-                Equipo Astyp
-              </span>
-
-              <strong>
-                Trabajo en campo
-              </strong>
-
+            <div class="gallery-text">
+              <span>Equipo Astyp</span>
+              <strong>Trabajo en campo</strong>
             </div>
-
           </button>
-
 
 
           <button
@@ -721,20 +690,17 @@
             type="button"
             data-image="images/trabajo-fibra-02.png"
           >
-
             <img
               src="images/trabajo-fibra-02.png"
               alt="Fusionadora de fibra óptica"
             >
 
-            <div class="gallery-overlay"></div>
+            <div class="gallery-shade"></div>
 
-            <div class="gallery-caption">
+            <div class="gallery-text">
               <strong>Fusión de fibra</strong>
             </div>
-
           </button>
-
 
 
           <button
@@ -742,20 +708,17 @@
             type="button"
             data-image="images/trabajo-fibra-03.png"
           >
-
             <img
               src="images/trabajo-fibra-03.png"
-              alt="Trabajo técnico Grupo Astyp"
+              alt="Técnico Grupo Astyp"
             >
 
-            <div class="gallery-overlay"></div>
+            <div class="gallery-shade"></div>
 
-            <div class="gallery-caption">
+            <div class="gallery-text">
               <strong>Trabajo técnico</strong>
             </div>
-
           </button>
-
 
 
           <button
@@ -763,20 +726,17 @@
             type="button"
             data-image="images/trabajo-fibra-04.png"
           >
-
             <img
               src="images/trabajo-fibra-04.png"
               alt="Preparación de fibra óptica"
             >
 
-            <div class="gallery-overlay"></div>
+            <div class="gallery-shade"></div>
 
-            <div class="gallery-caption">
+            <div class="gallery-text">
               <strong>Preparación de red</strong>
             </div>
-
           </button>
-
 
 
           <button
@@ -784,20 +744,17 @@
             type="button"
             data-image="images/trabajo-fibra-05.png"
           >
-
             <img
               src="images/trabajo-fibra-05.png"
               alt="Infraestructura Grupo Astyp"
             >
 
-            <div class="gallery-overlay"></div>
+            <div class="gallery-shade"></div>
 
-            <div class="gallery-caption">
+            <div class="gallery-text">
               <strong>Infraestructura</strong>
             </div>
-
           </button>
-
 
 
           <button
@@ -805,20 +762,17 @@
             type="button"
             data-image="images/trabajo-fibra-06.jpg"
           >
-
             <img
               src="images/trabajo-fibra-06.jpg"
               alt="Caja de fibra óptica"
             >
 
-            <div class="gallery-overlay"></div>
+            <div class="gallery-shade"></div>
 
-            <div class="gallery-caption">
+            <div class="gallery-text">
               <strong>Red FTTH</strong>
             </div>
-
           </button>
-
 
 
           <button
@@ -826,18 +780,16 @@
             type="button"
             data-image="images/trabajo-fibra-07.jpg"
           >
-
             <img
               src="images/trabajo-fibra-07.jpg"
-              alt="Equipo Grupo Astyp"
+              alt="Grupo Astyp trabajando"
             >
 
-            <div class="gallery-overlay"></div>
+            <div class="gallery-shade"></div>
 
-            <div class="gallery-caption">
+            <div class="gallery-text">
               <strong>Grupo Astyp</strong>
             </div>
-
           </button>
 
         </div>
@@ -847,42 +799,39 @@
     </section>
 
 
-
     <!-- Cobertura -->
-
     <section class="coverage-section" id="cobertura">
 
-      <div class="coverage-glow"></div>
-
+      <div class="coverage-blue"></div>
+      <div class="coverage-orange"></div>
 
       <div class="container coverage-content reveal">
 
         <div>
 
-          <span class="coverage-tag">
-            Estamos creciendo
+          <span class="coverage-pill">
+            Consulta ahora
           </span>
 
           <h2>
-            ¿Astyp ya llegó
-            <span>a tu zona?</span>
+            ¿Grupo Astyp ya
+            <span>llegó a tu zona?</span>
           </h2>
 
           <p>
             Envíanos tu ubicación por WhatsApp y verificaremos
-            la disponibilidad del servicio.
+            la cobertura disponible para tu domicilio.
           </p>
 
         </div>
 
-
         <a
-          class="button coverage-button"
+          class="btn coverage-btn"
           href="https://wa.me/51938192616?text=Hola%20Grupo%20Astyp,%20quiero%20consultar%20cobertura.%20Esta%20es%20mi%20ubicación:"
           target="_blank"
           rel="noopener"
         >
-          Consultar cobertura
+          Consultar mi cobertura
         </a>
 
       </div>
@@ -890,49 +839,32 @@
     </section>
 
 
-
     <!-- Cierre -->
+    <section class="closing-section">
 
-    <section class="final-cta">
-
-      <div class="final-cta-pattern"></div>
-
-
-      <div class="container final-cta-content reveal">
-
+      <div class="container closing-layout reveal">
 
         <div>
 
-          <span class="section-tag">
-            Conéctate hoy
+          <span class="section-kicker">
+            Promoción Astyp
           </span>
 
           <h2>
-            Tu nuevo internet
-            <span>puede empezar hoy</span>
+            Internet desde
+            <span>S/45</span>
           </h2>
 
           <p>
-            Planes desde
-            <strong>S/ 45 mensuales</strong>
-            durante tus primeros 3 meses.
+            O elige un Dúo con internet + TV por cable CATV
+            desde S/65 durante tus primeros 3 meses.
           </p>
-
-
-          <div class="cta-points">
-
-            <span>✓ Fibra óptica</span>
-            <span>✓ Atención técnica</span>
-            <span>✓ Consulta de cobertura</span>
-
-          </div>
 
         </div>
 
-
         <a
-          class="button final-button"
-          href="https://wa.me/51938192616?text=Hola%20Grupo%20Astyp,%20quiero%20contratar%20internet."
+          class="btn closing-button"
+          href="https://wa.me/51938192616?text=Hola%20Grupo%20Astyp,%20quiero%20contratar%20un%20plan."
           target="_blank"
           rel="noopener"
         >
@@ -946,40 +878,35 @@
   </main>
 
 
-
-  <!-- Footer -->
-
   <footer class="footer">
 
     <div class="container footer-grid">
 
-
-      <div class="footer-company">
+      <div class="footer-brand">
 
         <div class="footer-logo">
-          <img
-            src="images/logo.png"
-            alt="Grupo Astyp"
-          >
+          <img src="images/logo.png" alt="Grupo Astyp">
         </div>
 
         <p>
           Internet & Telecomunicaciones
         </p>
 
+        <span>
+          Fibra óptica + CATV
+        </span>
+
       </div>
 
 
       <div class="footer-column">
 
-        <h3>
-          Navegación
-        </h3>
+        <h3>Explora</h3>
 
-        <a href="#inicio">Inicio</a>
         <a href="#planes">Planes</a>
+        <a href="#catv">CATV</a>
         <a href="#nosotros">Nosotros</a>
-        <a href="#trabajos">Nuestro trabajo</a>
+        <a href="#trabajos">Trabajos</a>
         <a href="#cobertura">Cobertura</a>
 
       </div>
@@ -987,9 +914,7 @@
 
       <div class="footer-column">
 
-        <h3>
-          Contacto
-        </h3>
+        <h3>Contacto</h3>
 
         <a
           href="https://wa.me/51938192616"
@@ -1009,19 +934,12 @@
 
 
     <div class="container footer-bottom">
-
-      <span>
-        © <span id="year"></span> Grupo Astyp.
-        Todos los derechos reservados.
-      </span>
-
+      © <span id="year"></span> Grupo Astyp.
+      Todos los derechos reservados.
     </div>
 
   </footer>
 
-
-
-  <!-- WhatsApp -->
 
   <a
     class="whatsapp-float"
@@ -1030,26 +948,13 @@
     rel="noopener"
     aria-label="Contactar por WhatsApp"
   >
-
     <svg viewBox="0 0 24 24">
-
-      <path
-        d="M20.52 3.48A11.87 11.87 0 0 0 12.07 0C5.5 0 .15 5.34.15 11.91c0 2.1.55 4.15 1.6 5.96L.05 24l6.29-1.65a11.91 11.91 0 0 0 5.72 1.46h.01C18.63 23.81 24 18.47 24 11.91c0-3.18-1.24-6.17-3.48-8.43ZM12.07 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.73.98 1-3.63-.24-.37a9.87 9.87 0 0 1-1.51-5.28C2.19 6.44 6.62 2 12.08 2a9.82 9.82 0 0 1 7.01 2.91A9.84 9.84 0 0 1 22 11.91c0 5.45-4.45 9.89-9.93 9.89Zm5.43-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47a8.88 8.88 0 0 1-1.65-2.05c-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.21 5.1 4.5.71.31 1.27.49 1.7.63.72.23 1.37.2 1.89.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"
-      >
-      </path>
-
+      <path d="M20.52 3.48A11.87 11.87 0 0 0 12.07 0C5.5 0 .15 5.34.15 11.91c0 2.1.55 4.15 1.6 5.96L.05 24l6.29-1.65a11.91 11.91 0 0 0 5.72 1.46h.01C18.63 23.81 24 18.47 24 11.91c0-3.18-1.24-6.17-3.48-8.43ZM12.07 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.73.98 1-3.63-.24-.37a9.87 9.87 0 0 1-1.51-5.28C2.19 6.44 6.62 2 12.08 2a9.82 9.82 0 0 1 7.01 2.91A9.84 9.84 0 0 1 22 11.91c0 5.45-4.45 9.89-9.93 9.89Zm5.43-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47a8.88 8.88 0 0 1-1.65-2.05c-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.21 5.1 4.5.71.31 1.27.49 1.7.63.72.23 1.37.2 1.89.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
     </svg>
-
   </a>
 
 
-
-  <!-- Galería ampliada -->
-
-  <div
-    class="lightbox"
-    aria-hidden="true"
-  >
+  <div class="lightbox" aria-hidden="true">
 
     <button
       class="lightbox-close"
@@ -1059,15 +964,12 @@
       ×
     </button>
 
-    <img
-      src=""
-      alt="Trabajo Grupo Astyp"
-    >
+    <img src="" alt="Trabajo Grupo Astyp">
 
   </div>
 
 
-  <script src="script.js?v=4"></script>
+  <script src="script.js?v=5"></script>
 
 </body>
 </html>
